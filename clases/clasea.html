@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/clasea.css">
+    <title>Calculadora | Clase a</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <script src="../js/alertas1.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logofondo.png" alt="Logo principal" width="80" height="80"> Calculadora de subnetting
+                </a>
+            </div>
+        </nav>
+
+        <ul class="nav nav-tabs" style="background-color: #e3f2fd;">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../clases/clasea.html">Clase a</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../clases/claseb.html">Clase b</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../clases/clasec.html">Clase c</a>
+            </li>
+        </ul>
+
+        <div class="position-absolute top-50 start-50 translate-middle" style="width: 90%; background-color: lightsteelblue; padding: 50px 0 50px 0; border-radius: 10px;">
+            <form method="post" action="../backend/clasea.php" id="formulario" onsubmit="return validar();">
+                <div class="form-floating" id="inputs">
+                    <input type="text" class="form-control" id="ip" placeholder="name@example.com" value="" name="ip">
+                    <label for=" ip" class="fw-lighter">Digite la dirección ip</label>
+                </div>
+
+                <div class="form-floating" id="inputs">
+                    <input type="text" class="form-control" id="subredes" placeholder="name@example.com" value="" name="subredes">
+                    <label for=" subredes" class="fw-lighter">Digite el número de subredes</label>
+                </div>
+
+                <div class="btn">
+                    <button id="btn" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="../sweetalerts/dist/jquery.slim.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../sweetalerts/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

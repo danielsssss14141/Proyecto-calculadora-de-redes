@@ -1,0 +1,20 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#btnb {
+    margin-left: 30px;
+}
+
+#btnc {
+    margin-left: 30px;
+}
